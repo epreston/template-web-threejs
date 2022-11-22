@@ -1,0 +1,25 @@
+{
+  "name": "empty-project",
+  "version": "0.1.0",
+  "description": "Repo Template: three, eslint.",
+  "private": true,
+  "keywords": [
+    "javascript",
+    "glsl",
+    "three"
+  ],
+  "author": "Ed Preston",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "three": "^0.146.0",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0"
+  }
+}
