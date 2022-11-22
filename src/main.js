@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+//  import * as THREE from 'https://unpkg.com/three@0.146.0/build/three.module.js';
 
 // import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.146.0/examples/jsm/controls/OrbitControls.js';
@@ -9,7 +10,7 @@ class ThreeJSWebTemplate {
   async initialize() {
     this.threejs_ = new THREE.WebGLRenderer();
     this.threejs_.outputEncoding = THREE.sRGBEncoding;
-    document.body.appendChild(this.threejs_.domElement);
+    document.querySelector('#app').appendChild(this.threejs_.domElement);
 
     window.addEventListener(
       'resize',
