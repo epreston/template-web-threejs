@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "description": "Repo Template: three, eslint.",
   "private": true,
-  "keywords": [
-    "javascript",
-    "glsl",
-    "three"
-  ],
+  "keywords": [],
   "author": "Ed Preston",
   "license": "MIT",
   "files": [
