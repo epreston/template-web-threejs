@@ -4,7 +4,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
-    "slevesque.shader",
-    "ritwickdey.liveserver"
+    "slevesque.shader"
   ]
 }

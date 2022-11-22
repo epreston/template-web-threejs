@@ -1,8 +1,18 @@
+// three-js
 import * as THREE from 'three';
-//  import * as THREE from 'https://unpkg.com/three@0.146.0/build/three.module.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.146.0/examples/jsm/controls/OrbitControls.js';
+// shaders
+import vsh from './shaders/vertex-shader.glsl';
+import fsh from './shaders/fragment-shader.glsl';
+
+// resources
+import leftx from './resources/Cold_Sunset__Cam_2_Left+X.png';
+import rightx from './resources/Cold_Sunset__Cam_3_Right-X.png';
+import upy from './resources/Cold_Sunset__Cam_4_Up+Y.png';
+import downy from './resources/Cold_Sunset__Cam_5_Down-Y.png';
+import frontz from './resources/Cold_Sunset__Cam_0_Front+Z.png';
+import backz from './resources/Cold_Sunset__Cam_1_Back-Z.png';
 
 class ThreeJSWebTemplate {
   constructor() {}
@@ -10,7 +20,7 @@ class ThreeJSWebTemplate {
   async initialize() {
     this.threejs_ = new THREE.WebGLRenderer();
     this.threejs_.outputEncoding = THREE.sRGBEncoding;
-    document.querySelector('#app').appendChild(this.threejs_.domElement);
+    document.body.appendChild(this.threejs_.domElement);
 
     window.addEventListener(
       'resize',
@@ -35,15 +45,7 @@ class ThreeJSWebTemplate {
     controls.update();
 
     const loader = new THREE.CubeTextureLoader();
-    const texture = loader.load([
-      './resources/Cold_Sunset__Cam_2_Left+X.png',
-      './resources/Cold_Sunset__Cam_3_Right-X.png',
-      './resources/Cold_Sunset__Cam_4_Up+Y.png',
-      './resources/Cold_Sunset__Cam_5_Down-Y.png',
-      './resources/Cold_Sunset__Cam_0_Front+Z.png',
-      './resources/Cold_Sunset__Cam_1_Back-Z.png',
-    ]);
-
+    const texture = loader.load([leftx, rightx, upy, downy, frontz, backz]);
     this.scene_.background = texture;
 
     await this.setupProject_();
@@ -54,20 +56,13 @@ class ThreeJSWebTemplate {
   }
 
   async setupProject_() {
-    const vsh = await fetch('./shaders/vertex-shader.glsl');
-    const fsh = await fetch('./shaders/fragment-shader.glsl');
-
     const material = new THREE.ShaderMaterial({
       uniforms: {
-        specMap: {
-          value: this.scene_.background,
-        },
-        time: {
-          value: 0.0,
-        },
+        specMap: { value: this.scene_.background },
+        time: { value: 0.0 },
       },
-      vertexShader: await vsh.text(),
-      fragmentShader: await fsh.text(),
+      vertexShader: vsh,
+      fragmentShader: fsh,
     });
 
     this.material_ = material;

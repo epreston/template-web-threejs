@@ -5,6 +5,26 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Development",
+      "type": "chrome",
+      "request": "launch",
+      // "outFiles": [],
+      // "perScriptSourcemaps": "yes",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src/"
+      // "preLaunchTask": "start dev server"
+    },
+    {
+      "name": "Production Preview",
+      "type": "chrome",
+      "request": "launch",
+      // "outFiles": [],
+      // "perScriptSourcemaps": "yes",
+      "url": "http://localhost:4173",
+      "webRoot": "${workspaceFolder}/dist/"
+      // "preLaunchTask": "preview production build"
+    },
+    {
       "name": "Preview (Python Web, Chrome)",
       "type": "chrome",
       "request": "launch",
