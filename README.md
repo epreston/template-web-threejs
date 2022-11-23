@@ -54,6 +54,9 @@ https://threejs.org/
 ESLint
 https://eslint.org/
 
+Vite
+https://vitejs.dev/
+
 ## License
 
-© 2022 Ed Preston, See [License](LICENSE).
+See [License](LICENSE).
