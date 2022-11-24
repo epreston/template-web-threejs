@@ -48,14 +48,11 @@ npm run test
 
 ## References
 
-three.js
-https://threejs.org/
-
-ESLint
-https://eslint.org/
-
-Vite
-https://vitejs.dev/
+| Item     | Reference            |
+| -------- | -------------------- |
+| three.js | https://threejs.org/ |
+| ESLint   | https://eslint.org/  |
+| Vite     | https://vitejs.dev/  |
 
 ## License
 
