@@ -6,13 +6,13 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import vsh from './shaders/vertex-shader.glsl';
 import fsh from './shaders/fragment-shader.glsl';
 
-// resources
-import leftx from './resources/Cold_Sunset__Cam_2_Left+X.png';
-import rightx from './resources/Cold_Sunset__Cam_3_Right-X.png';
-import upy from './resources/Cold_Sunset__Cam_4_Up+Y.png';
-import downy from './resources/Cold_Sunset__Cam_5_Down-Y.png';
-import frontz from './resources/Cold_Sunset__Cam_0_Front+Z.png';
-import backz from './resources/Cold_Sunset__Cam_1_Back-Z.png';
+// assets
+import leftx from './assets/Cold_Sunset__Cam_2_Left+X.png';
+import rightx from './assets/Cold_Sunset__Cam_3_Right-X.png';
+import upy from './assets/Cold_Sunset__Cam_4_Up+Y.png';
+import downy from './assets/Cold_Sunset__Cam_5_Down-Y.png';
+import frontz from './assets/Cold_Sunset__Cam_0_Front+Z.png';
+import backz from './assets/Cold_Sunset__Cam_1_Back-Z.png';
 
 class ThreeJSWebTemplate {
   constructor() {}
