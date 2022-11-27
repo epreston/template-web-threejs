@@ -1,3 +1,7 @@
+// tweakpane
+import { Pane } from 'tweakpane';
+import * as EssentialsPlugin from '@tweakpane/plugin-essentials';
+
 // three-js
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -50,6 +54,15 @@ class ThreeJSWebTemplate {
 
     await this.setupProject_();
 
+    this.tweakpane_ = new Pane();
+    this.tweakpane_.registerPlugin(EssentialsPlugin);
+    this.fpsGraph_ = this.tweakpane_.addBlade({
+      view: 'fpsgraph',
+
+      label: 'fpsgraph',
+      lineCount: 1,
+    });
+
     this.previousRAF_ = null;
     this.onWindowResize_();
     this.raf_();
@@ -88,7 +101,11 @@ class ThreeJSWebTemplate {
       }
 
       this.step_(t - this.previousRAF_);
+
+      this.fpsGraph_.begin();
       this.threejs_.render(this.scene_, this.camera_);
+      this.fpsGraph_.end();
+
       this.raf_();
       this.previousRAF_ = t;
     });
