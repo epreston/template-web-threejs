@@ -54,13 +54,13 @@ class ThreeJSWebTemplate {
 
     await this.setupProject_();
 
-    this.tweakpane_ = new Pane();
+    this.tweakpane_ = new Pane({ title: 'tweaks' });
     this.tweakpane_.registerPlugin(EssentialsPlugin);
     this.fpsGraph_ = this.tweakpane_.addBlade({
       view: 'fpsgraph',
 
       label: 'fpsgraph',
-      lineCount: 1,
+      lineCount: 2,
     });
 
     this.previousRAF_ = null;
