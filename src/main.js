@@ -11,12 +11,12 @@ import vsh from './shaders/vertex-shader.glsl';
 import fsh from './shaders/fragment-shader.glsl';
 
 // assets
-import leftx from './assets/Cold_Sunset__Cam_2_Left+X.png';
-import rightx from './assets/Cold_Sunset__Cam_3_Right-X.png';
-import upy from './assets/Cold_Sunset__Cam_4_Up+Y.png';
-import downy from './assets/Cold_Sunset__Cam_5_Down-Y.png';
-import frontz from './assets/Cold_Sunset__Cam_0_Front+Z.png';
-import backz from './assets/Cold_Sunset__Cam_1_Back-Z.png';
+import leftx from './assets/sunset2-left+x.png';
+import rightx from './assets/sunset3-right-x.png';
+import upy from './assets/sunset4-up+y.png';
+import downy from './assets/sunset5-down-y.png';
+import frontz from './assets/sunset0-front+z.png';
+import backz from './assets/sunset1-back-z.png';
 
 class ThreeJSWebTemplate {
   constructor() {}
