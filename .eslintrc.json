@@ -3,13 +3,13 @@
     "strict": 0 // controls location of Use Strict Directives. 0: required by `babel-eslint`
   },
   "env": {
-    "es6": true,
+    "es2020": true,
     "browser": true,
     "node": true,
     "mocha": true
   },
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "extends": ["eslint:recommended", "prettier"],
