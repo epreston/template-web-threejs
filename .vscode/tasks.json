@@ -9,7 +9,7 @@
       "command": "python3",
       "args": ["-m", "http.server", "8000"],
       "options": {
-        "cwd": "${workspaceFolder}/dist"
+        "cwd": "${workspaceFolder}/dist/"
       },
       "isBackground": true,
       "problemMatcher": {

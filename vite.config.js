@@ -6,10 +6,7 @@ import glsl from 'vite-plugin-glsl';
 
 export default defineConfig({
   // config options
-  root: 'src',
-  build: {
-    outDir: '../dist/',
-  },
+  assetsInclude: ['**/*.gltf', '**/*.glb', '**/*.m4a'],
   server: {
     open: '/index.html',
   },

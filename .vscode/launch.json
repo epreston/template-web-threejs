@@ -12,7 +12,7 @@
       // "outFiles": [],
       // "perScriptSourcemaps": "yes",
       "url": "http://localhost:5173",
-      "webRoot": "${workspaceFolder}/src/"
+      "webRoot": "${workspaceFolder}"
       // "preLaunchTask": "start dev server"
     },
     {
@@ -34,7 +34,7 @@
       // "outFiles": [],
       // "perScriptSourcemaps": "yes",
       "url": "http://localhost:8000",
-      "webRoot": "${workspaceFolder}/dist",
+      "webRoot": "${workspaceFolder}/dist/",
       "preLaunchTask": "python3: http.server 8000 start"
     }
   ]

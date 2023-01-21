@@ -1,29 +1,39 @@
 // tweakpane
-import { Pane } from 'tweakpane';
 import * as EssentialsPlugin from '@tweakpane/plugin-essentials';
+import { Pane } from 'tweakpane';
 
 // three-js
-import * as THREE from 'three';
+import {
+  WebGLRenderer,
+  sRGBEncoding,
+  Scene,
+  PerspectiveCamera,
+  CubeTextureLoader,
+  ShaderMaterial,
+  IcosahedronGeometry,
+  Mesh,
+} from 'three';
+
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // shaders
-import vsh from './shaders/vertex-shader.glsl';
-import fsh from './shaders/fragment-shader.glsl';
+import fsh from './shaders/fragment-shader.glsl?raw';
+import vsh from './shaders/vertex-shader.glsl?raw';
 
 // assets
+import frontz from './assets/sunset0-front+z.png';
+import backz from './assets/sunset1-back-z.png';
 import leftx from './assets/sunset2-left+x.png';
 import rightx from './assets/sunset3-right-x.png';
 import upy from './assets/sunset4-up+y.png';
 import downy from './assets/sunset5-down-y.png';
-import frontz from './assets/sunset0-front+z.png';
-import backz from './assets/sunset1-back-z.png';
 
 class ThreeJSWebTemplate {
   constructor() {}
 
   async initialize() {
-    this.threejs_ = new THREE.WebGLRenderer();
-    this.threejs_.outputEncoding = THREE.sRGBEncoding;
+    this.threejs_ = new WebGLRenderer();
+    this.threejs_.outputEncoding = sRGBEncoding;
     document.body.appendChild(this.threejs_.domElement);
 
     window.addEventListener(
@@ -34,21 +44,16 @@ class ThreeJSWebTemplate {
       false
     );
 
-    this.scene_ = new THREE.Scene();
+    this.scene_ = new Scene();
 
-    this.camera_ = new THREE.PerspectiveCamera(
-      60,
-      1920.0 / 1080.0,
-      0.1,
-      1000.0
-    );
+    this.camera_ = new PerspectiveCamera(60, 1920.0 / 1080.0, 0.1, 1000.0);
     this.camera_.position.set(1, 0, 5);
 
     const controls = new OrbitControls(this.camera_, this.threejs_.domElement);
     controls.target.set(0, 0, 0);
     controls.update();
 
-    const loader = new THREE.CubeTextureLoader();
+    const loader = new CubeTextureLoader();
     const texture = loader.load([leftx, rightx, upy, downy, frontz, backz]);
     this.scene_.background = texture;
 
@@ -69,7 +74,7 @@ class ThreeJSWebTemplate {
   }
 
   async setupProject_() {
-    const material = new THREE.ShaderMaterial({
+    const material = new ShaderMaterial({
       uniforms: {
         specMap: { value: this.scene_.background },
         time: { value: 0.0 },
@@ -80,8 +85,8 @@ class ThreeJSWebTemplate {
 
     this.material_ = material;
 
-    const geometry = new THREE.IcosahedronGeometry(1, 128);
-    const mesh = new THREE.Mesh(geometry, material);
+    const geometry = new IcosahedronGeometry(1, 128);
+    const mesh = new Mesh(geometry, material);
     this.scene_.add(mesh);
 
     this.totalTime_ = 0;

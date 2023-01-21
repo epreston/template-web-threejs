@@ -1,12 +1,9 @@
 {
-  "rules": {
-    "strict": 0 // controls location of Use Strict Directives. 0: required by `babel-eslint`
-  },
+  "root": true,
   "env": {
     "es2020": true,
     "browser": true,
-    "node": true,
-    "mocha": true
+    "node": true
   },
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -16,5 +13,11 @@
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
+  },
+  "rules": {
+    "strict": 0, // controls location of Use Strict Directives. 0: required by `babel-eslint`
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "no-unused-vars": "off"
   }
 }
