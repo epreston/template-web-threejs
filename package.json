@@ -10,6 +10,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=16.11.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
