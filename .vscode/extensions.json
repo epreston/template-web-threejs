@@ -4,6 +4,7 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
-    "slevesque.shader"
+    "slevesque.shader",
+    "esbenp.prettier-vscode"
   ]
 }
