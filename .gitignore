@@ -32,13 +32,13 @@ pids
 *.pid.lock
 
 # Dependency directories
-node_modules/
+node_modules
 
 # Optional npm cache directory
 .npm
 
 # Test coverage reports
-coverage/
+coverage
 
 # Distribution Directory
 dist/*
