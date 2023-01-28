@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@tweakpane/core": "^1.1.2",
-    "@types/three": "^0.148.1",
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "vite": "^4.0.4",
