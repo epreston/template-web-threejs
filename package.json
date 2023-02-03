@@ -1,6 +1,6 @@
 {
   "name": "empty-project",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Repo Template: three, eslint.",
   "private": true,
   "type": "module",
@@ -21,16 +21,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@tweakpane/plugin-essentials": "^0.1.7",
+    "@tweakpane/plugin-essentials": "^0.1.8",
     "three": "^0.149.0",
-    "tweakpane": "^3.1.2"
+    "tweakpane": "^3.1.4"
   },
   "devDependencies": {
-    "@tweakpane/core": "^1.1.2",
-    "eslint": "^8.32.0",
+    "@tweakpane/core": "^1.1.4",
+    "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
-    "vite": "^4.0.4",
-    "vite-plugin-glsl": "^1.1.1"
+    "vite": "^4.1.1",
+    "vite-plugin-glsl": "^1.1.2"
   },
   "packageManager": "npm@8.19.3"
 }
