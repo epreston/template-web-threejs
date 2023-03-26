@@ -11,4 +11,7 @@ export default defineConfig({
     open: '/index.html',
   },
   plugins: [glsl()],
+  build: {
+    target: ['es2022', 'edge111', 'firefox111', 'chrome111', 'safari16.3', 'ios16.3'],
+  },
 });
