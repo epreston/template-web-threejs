@@ -2,58 +2,38 @@
 
 Repo Template: three, vite, eslint
 
-## Building and Running on localhost
+## Setup
 
-First install dependencies:
+Download [Node.js](https://nodejs.org/en/download/).
 
-```sh
+Run the following commands:
+
+```bash
+# install dependencies
 npm install
-```
 
-To start a development server with hot module reloading:
-
-```sh
+# start a local server in development mode
 npm run dev
 ```
 
-## Preview Production Build
+## Commands
 
-To create a production build into "dist":
-
-```sh
-npm run build
-```
-
-To start a local server to preview:
-
-```sh
-npm run preview
-```
-
-## Linting
-
-To run static code analysis:
-
-```sh
-npm run lint
-```
-
-## Testing
-
-To run unit tests:
-
-```sh
-npm run test
-```
+| Action  | Command           | Description                                      |
+| ------- | ----------------- | ------------------------------------------------ |
+| dev     | `npm run dev`     | Start a development server                       |
+| build   | `npm run build`   | Create a production build into "dist"            |
+| preview | `npm run preview` | Start a local server to preview production build |
+| lint    | `npm run lint`    | Run static code analysis                         |
 
 ## References
 
 | Item     | Reference            |
 | -------- | -------------------- |
 | three.js | https://threejs.org/ |
+| Node.js  | https://nodejs.org/  |
 | ESLint   | https://eslint.org/  |
 | Vite     | https://vitejs.dev/  |
 
 ## License
 
-See [License](LICENSE).
+MIT [License](LICENSE).
