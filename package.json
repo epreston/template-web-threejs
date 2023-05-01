@@ -1,8 +1,8 @@
 {
+  "private": true,
   "name": "empty-project",
   "version": "0.3.4",
   "description": "Repo Template: three, eslint.",
-  "private": true,
   "type": "module",
   "keywords": [],
   "author": "",
