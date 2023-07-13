@@ -13,6 +13,7 @@
   "engines": {
     "node": ">=18.15.0"
   },
+  "packageManager": "npm@9.6.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
@@ -31,6 +32,5 @@
     "eslint-config-prettier": "^8.8.0",
     "vite": "^4.4.3",
     "vite-plugin-glsl": "^1.1.2"
-  },
-  "packageManager": "npm@9.6.2"
+  }
 }
