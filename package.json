@@ -1,9 +1,9 @@
 {
   "private": true,
+  "type": "module",
   "name": "empty-project",
   "version": "0.3.5",
   "description": "Repo Template: three, vite, eslint.",
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "MIT",
