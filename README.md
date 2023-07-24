@@ -27,12 +27,19 @@ npm run dev
 
 ## References
 
-| Item     | Reference            |
-| -------- | -------------------- |
-| three.js | https://threejs.org/ |
-| Node.js  | https://nodejs.org/  |
-| ESLint   | https://eslint.org/  |
-| Vite     | https://vitejs.dev/  |
+| Tool         | Reference                |
+| ------------ | ------------------------ |
+| three.js     | https://threejs.org/     |
+| Node.js      | https://nodejs.org/      |
+| Vite         | https://vitejs.dev/      |
+| ESLint       | https://eslint.org/      |
+| Prettier     | https://prettier.io      |
+| EditorConfig | https://editorconfig.org |
+
+| Website      | Reference             |
+| ------------ | --------------------- |
+| Can I Use    | https://caniuse.com   |
+| Browserslist | https://browsersl.ist |
 
 ## License
 
