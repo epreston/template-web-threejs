@@ -30,7 +30,7 @@
   "devDependencies": {
     "@tweakpane/core": "^1.1.9",
     "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-prettier": "^8.9.0",
     "vite": "^4.4.7",
     "vite-plugin-glsl": "^1.1.2"
   }
