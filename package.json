@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "name": "empty-project",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Repo Template: three, vite, eslint.",
   "keywords": [],
   "author": "",
@@ -11,7 +11,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=18.16.1"
+    "node": ">=18.16.1 || >=20.0.0"
   },
   "packageManager": "npm@9.6.2",
   "browserslist": "Chrome >= 112, ChromeAndroid >= 112, Edge >= 112, Firefox >= 112, FirefoxAndroid  >= 112,  Safari >= 16.4, iOS >= 16.4, not dead",
@@ -23,15 +23,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@tweakpane/plugin-essentials": "^0.1.8",
+    "@tweakpane/plugin-essentials": "^0.2.0",
     "three": "0.150.1",
-    "tweakpane": "^3.1.10"
+    "tweakpane": "^4.0.0"
   },
   "devDependencies": {
-    "@tweakpane/core": "^1.1.9",
-    "eslint": "^8.46.0",
-    "eslint-config-prettier": "^8.9.0",
-    "vite": "^4.4.8",
+    "@tweakpane/core": "^2.0.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "vite": "^4.4.9",
     "vite-plugin-glsl": "^1.1.2"
   }
 }
