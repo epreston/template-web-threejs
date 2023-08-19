@@ -2,6 +2,8 @@
 
 Repo Template: three, vite, eslint
 
+[![CI][ci-badge]][ci-url]
+
 ## Setup
 
 Download [Node.js](https://nodejs.org/en/download/).
@@ -25,7 +27,7 @@ npm run dev
 | preview | `npm run preview` | Start a local server to preview production build |
 | lint    | `npm run lint`    | Run static code analysis                         |
 
-## References
+## Tools
 
 | Tool         | Reference                |
 | ------------ | ------------------------ |
@@ -36,11 +38,20 @@ npm run dev
 | Prettier     | https://prettier.io      |
 | EditorConfig | https://editorconfig.org |
 
-| Website      | Reference             |
-| ------------ | --------------------- |
-| Can I Use    | https://caniuse.com   |
-| Browserslist | https://browsersl.ist |
+## References
+
+| Website      | Reference                       |
+| ------------ | ------------------------------- |
+| Can I Use    | https://caniuse.com             |
+| Browserslist | https://browsersl.ist           |
+| WebGL2       | https://www.khronos.org/webgl/  |
+| glTF         | https://www.khronos.org/gltf/   |
+| Fundamentals | https://webgl2fundamentals.org/ |
 
 ## License
 
 This template is released under the MIT [License](LICENSE).
+
+[ci-badge]: https://github.com/epreston/template-web-threejs/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/epreston/template-web-threejs/actions
+
