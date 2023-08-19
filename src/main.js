@@ -11,7 +11,7 @@ import {
   CubeTextureLoader,
   ShaderMaterial,
   IcosahedronGeometry,
-  Mesh,
+  Mesh
 } from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -65,7 +65,7 @@ class ThreeJSWebTemplate {
       view: 'fpsgraph',
 
       label: 'fpsgraph',
-      lineCount: 2,
+      lineCount: 2
     });
 
     this.previousRAF_ = null;
@@ -77,10 +77,10 @@ class ThreeJSWebTemplate {
     const material = new ShaderMaterial({
       uniforms: {
         specMap: { value: this.scene_.background },
-        time: { value: 0.0 },
+        time: { value: 0.0 }
       },
       vertexShader: vsh,
-      fragmentShader: fsh,
+      fragmentShader: fsh
     });
 
     this.material_ = material;
