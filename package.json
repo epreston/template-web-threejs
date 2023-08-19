@@ -19,7 +19,7 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint --ext .js --report-unused-disable-directives --env-info .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
