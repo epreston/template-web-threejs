@@ -4,31 +4,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "python3: http.server 8000 start",
-      "type": "shell",
-      "command": "python3",
-      "args": ["-m", "http.server", "8000"],
-      "options": {
-        "cwd": "${workspaceFolder}/dist/"
-      },
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": ""
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "Serving .*",
-          "endsPattern": "\\.\\.\\."
-        }
-      },
-      "presentation": {
-        "echo": true,
-        "panel": "dedicated",
-        "showReuseMessage": false
-      }
-    },
-    {
       "type": "npm",
       "script": "dev",
       "problemMatcher": [],
@@ -55,15 +30,16 @@
       "presentation": {
         "echo": true,
         "panel": "dedicated"
-        // "showReuseMessage": false
       }
     },
     {
       "type": "npm",
       "script": "lint",
-      "problemMatcher": ["$eslint-stylish"],
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
       "label": "npm: lint",
-      "detail": "eslint src/**/*.js test/**/*.js"
+      "detail": "eslint --ext .js --env-info ."
     },
     {
       "type": "npm",

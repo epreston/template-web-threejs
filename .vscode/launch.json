@@ -9,33 +9,22 @@
       "type": "chrome",
       "request": "launch",
       "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
-      // "outFiles": [],
+      // "runtimeArgs": ["--enable-precise-memory-info"],
       // "perScriptSourcemaps": "yes",
       "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}"
-      // "preLaunchTask": "start dev server"
+      // "preLaunchTask": "npm: dev"
     },
     {
       "name": "Production Preview",
       "type": "chrome",
       "request": "launch",
       "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
-      // "outFiles": [],
+      // "runtimeArgs": ["--enable-precise-memory-info"],
       // "perScriptSourcemaps": "yes",
       "url": "http://localhost:4173",
       "webRoot": "${workspaceFolder}/dist/"
-      // "preLaunchTask": "preview production build"
-    },
-    {
-      "name": "Preview (Python Web, Chrome)",
-      "type": "chrome",
-      "request": "launch",
-      "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
-      // "outFiles": [],
-      // "perScriptSourcemaps": "yes",
-      "url": "http://localhost:8000",
-      "webRoot": "${workspaceFolder}/dist/",
-      "preLaunchTask": "python3: http.server 8000 start"
+      // "preLaunchTask": "npm: build"
     }
   ]
 }
