@@ -17,8 +17,8 @@ import {
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // shaders
-import fsh from './shaders/fragment-shader.glsl?raw';
-import vsh from './shaders/vertex-shader.glsl?raw';
+import fsh from './shaders/fragment-shader.glsl';
+import vsh from './shaders/vertex-shader.glsl';
 
 // assets
 import frontz from './assets/sunset0-front+z.png';
