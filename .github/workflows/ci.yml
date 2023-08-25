@@ -23,7 +23,7 @@ env:
   VITEST_SEGFAULT_RETRY: 3
 
 jobs:
-  ci-on-node:
+  continuous-integration:
     runs-on: ubuntu-latest
 
     timeout-minutes: 10
