@@ -33,7 +33,7 @@ class ThreeJSWebTemplate {
 
   async initialize() {
     this.threejs_ = new WebGLRenderer();
-    this.threejs_.outputEncoding = sRGBEncoding;
+    this.threejs_.outputEncoding = sRGBEncoding; // SRGBColorSpace
     document.body.appendChild(this.threejs_.domElement);
 
     window.addEventListener(
