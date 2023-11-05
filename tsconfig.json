@@ -1,0 +1,8 @@
+{
+  "extends": "@epreston/tsconfig",
+  "compilerOptions": {
+    /* Emit */
+    "outDir": "temp"
+  },
+  "include": ["global.d.ts", "src"]
+}

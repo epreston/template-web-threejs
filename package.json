@@ -1,9 +1,9 @@
 {
   "private": true,
   "type": "module",
-  "name": "empty-project",
-  "version": "0.3.6",
-  "description": "Repo Template: three, vite, eslint.",
+  "name": "empty-template-project",
+  "version": "1.0.0",
+  "description": "Repo Template: three, vite, eslint, prettier.",
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -11,23 +11,34 @@
     "dist"
   ],
   "browserslist": "Chrome >= 112, ChromeAndroid >= 112, Edge >= 112, Firefox >= 112, FirefoxAndroid  >= 112,  Safari >= 16.4, iOS >= 16.4, not dead",
+  "eslintConfig": {
+    "root": true,
+    "extends": "@epreston/eslint-config"
+  },
+  "prettier": "@epreston/prettier-config",
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
-    "lint": "eslint --ext .js --report-unused-disable-directives ."
+    "start": "vite --open",
+    "lint": "eslint --ext .js --report-unused-disable-directives .",
+    "format": "prettier --check --cache \"**/*.[tj]s?(x)\"",
+    "format-fix": "prettier --write --cache \"**/*.[tj]s?(x)\""
+  },
+  "devDependencies": {
+    "@epreston/eslint-config": "^1.1.0",
+    "@epreston/prettier-config": "^1.0.0",
+    "@epreston/tsconfig": "^1.0.1",
+    "@tweakpane/core": "^2.0.1",
+    "eslint": "^8.52.0",
+    "prettier": "^3.0.3",
+    "vite": "^4.5.0",
+    "vite-plugin-glsl": "^1.1.2"
   },
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.2.0",
-    "three": "0.150.1",
+    "three": "0.158.0",
     "tweakpane": "^4.0.1"
-  },
-  "devDependencies": {
-    "@tweakpane/core": "^2.0.1",
-    "eslint": "^8.52.0",
-    "eslint-config-prettier": "^9.0.0",
-    "vite": "^4.5.0",
-    "vite-plugin-glsl": "^1.1.2"
   },
   "engines": {
     "node": "^18.18.0 || >=20.9.0"
