@@ -5,7 +5,7 @@ import { Pane } from 'tweakpane';
 // three-js
 import {
   WebGLRenderer,
-  sRGBEncoding,
+  SRGBColorSpace,
   Scene,
   PerspectiveCamera,
   CubeTextureLoader,
@@ -33,7 +33,7 @@ class ThreeJSWebTemplate {
 
   async initialize() {
     this.threejs_ = new WebGLRenderer();
-    this.threejs_.outputEncoding = sRGBEncoding; // SRGBColorSpace
+    this.threejs_.outputColorSpace = SRGBColorSpace;
     document.body.appendChild(this.threejs_.domElement);
 
     window.addEventListener(
@@ -47,7 +47,7 @@ class ThreeJSWebTemplate {
     this.scene_ = new Scene();
 
     this.camera_ = new PerspectiveCamera(60, 1920.0 / 1080.0, 0.1, 1000.0);
-    this.camera_.position.set(1, 0, 5);
+    this.camera_.position.set(1, 0, 5); // false type error
 
     const controls = new OrbitControls(this.camera_, this.threejs_.domElement);
     controls.target.set(0, 0, 0);
