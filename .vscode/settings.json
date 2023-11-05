@@ -22,5 +22,14 @@
     "glsl",
     "threejs",
     "tweakpane"
+  ],
+  "cSpell.ignoreWords": [
+    "backz",
+    "epreston",
+    "fpsgraph",
+    "frontz",
+    "gltf",
+    "leftx",
+    "rightx"
   ]
 }
