@@ -1,4 +1,4 @@
 # .prettierignore
 
 dist
-coverage
+public
