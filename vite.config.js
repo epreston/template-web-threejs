@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     assetsInclude: ['**/*.gltf', '**/*.glb'],
     plugins: [glsl({ compress: mode === 'production' ? true : false })],
     build: {
-      target: ['es2022', 'chrome112', 'edge112', 'firefox112', 'safari16.4', 'ios16.4'],
+      target: ['es2022'],
       chunkSizeWarningLimit: 600,
       rollupOptions: {
         output: {
