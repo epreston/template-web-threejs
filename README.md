@@ -31,28 +31,28 @@ npm run start
 
 | Library   | Reference                         |
 | --------- | --------------------------------- |
-| three.js  | https://threejs.org/              |
+| three.js  | https://threejs.org               |
 | tweakpane | https://tweakpane.github.io/docs/ |
 
 ## Tools
 
 | Tool         | Reference                |
 | ------------ | ------------------------ |
-| Node.js      | https://nodejs.org/      |
-| Vite         | https://vitejs.dev/      |
-| ESLint       | https://eslint.org/      |
+| Node.js      | https://nodejs.org       |
+| Vite         | https://vitejs.dev       |
+| ESLint       | https://eslint.org       |
 | Prettier     | https://prettier.io      |
 | EditorConfig | https://editorconfig.org |
 
 ## References
 
-| Website      | Reference                       |
-| ------------ | ------------------------------- |
-| Can I Use    | https://caniuse.com             |
-| Browserslist | https://browsersl.ist           |
-| glTF         | https://www.khronos.org/gltf/   |
-| WebGL2       | https://www.khronos.org/webgl/  |
-| Fundamentals | https://webgl2fundamentals.org/ |
+| Website      | Reference                      |
+| ------------ | ------------------------------ |
+| Can I Use    | https://caniuse.com            |
+| Browserslist | https://browsersl.ist          |
+| glTF         | https://www.khronos.org/gltf/  |
+| WebGL2       | https://www.khronos.org/webgl/ |
+| Fundamentals | https://webgl2fundamentals.org |
 
 ## License
 
