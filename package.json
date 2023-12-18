@@ -47,7 +47,7 @@
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.2.0",
     "three": "0.159.0",
-    "tweakpane": "^4.0.1"
+    "tweakpane": "^4.0.2"
   },
   "engines": {
     "node": "^18.18.0 || >=20.9.0"
