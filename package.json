@@ -41,7 +41,7 @@
     "@tweakpane/core": "^2.0.1",
     "eslint": "^8.55.0",
     "prettier": "^3.1.1",
-    "vite": "^5.0.7",
+    "vite": "^5.0.10",
     "vite-plugin-glsl": "^1.2.1"
   },
   "dependencies": {
