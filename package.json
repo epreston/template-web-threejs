@@ -42,9 +42,9 @@
     "@epreston/prettier-config": "^2.0.0",
     "@epreston/tsconfig": "^1.1.1",
     "@tweakpane/core": "^2.0.3",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "vite": "^5.1.3",
+    "vite": "^5.1.4",
     "vite-plugin-glsl": "^1.2.1"
   },
   "dependencies": {
