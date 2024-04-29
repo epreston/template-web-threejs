@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.2.1",
-    "three": "0.163.0",
+    "three": "0.164.1",
     "tweakpane": "^4.0.3"
   },
   "engines": {
