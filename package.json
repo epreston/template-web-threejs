@@ -38,7 +38,7 @@
     "format-fix": "prettier --write --cache \"**/*.[tj]s?(x)\""
   },
   "devDependencies": {
-    "@epreston/eslint-config": "^1.1.1",
+    "@epreston/eslint-config": "^1.1.2",
     "@epreston/prettier-config": "^2.0.0",
     "@epreston/tsconfig": "^1.1.1",
     "@tweakpane/core": "^2.0.4",
