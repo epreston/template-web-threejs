@@ -21,6 +21,10 @@
     "not dead"
   ],
   "prettier": "@epreston/prettier-config",
+  "packageManager": "npm@10.7.0",
+  "engines": {
+    "node": "^18.20.4 || ^20.15.1 || >=22.5.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
@@ -43,8 +47,5 @@
     "@tweakpane/plugin-essentials": "^0.2.1",
     "three": "0.167.1",
     "tweakpane": "^4.0.4"
-  },
-  "engines": {
-    "node": "^18.20.4 || ^20.15.1 || >=22.5.0"
   }
 }
