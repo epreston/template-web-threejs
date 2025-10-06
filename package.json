@@ -40,7 +40,7 @@
     "eslint": "^9.37.0",
     "prettier": "^3.6.2",
     "vite": "^5.4.20",
-    "vite-plugin-glsl": "^1.5.1"
+    "vite-plugin-glsl": "^1.5.4"
   },
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.2.1",
