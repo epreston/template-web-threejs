@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     assetsInclude: ['**/*.gltf', '**/*.glb'],
     plugins: [glsl({ compress: mode === 'production' ? true : false })],
     build: {
-      target: ['es2022'],
+      target: ['es2024'],
       chunkSizeWarningLimit: 600,
       rollupOptions: {
         output: {
