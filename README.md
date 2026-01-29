@@ -44,13 +44,15 @@ npm run start
 
 ## References
 
-| Website      | Reference                      |
-| ------------ | ------------------------------ |
-| Can I Use    | https://caniuse.com            |
-| Browserslist | https://browsersl.ist          |
-| glTF         | https://www.khronos.org/gltf/  |
-| WebGL2       | https://www.khronos.org/webgl/ |
-| Fundamentals | https://webgl2fundamentals.org |
+| Website             | Reference                      |
+| ------------------- | ------------------------------ |
+| Can I Use           | https://caniuse.com            |
+| Browserslist        | https://browsersl.ist          |
+| Web3D Survey        | https://web3dsurvey.com/webgl2 |
+| Web Platform Status | https://webstatus.dev          |
+| glTF                | https://www.khronos.org/gltf/  |
+| WebGL2              | https://www.khronos.org/webgl/ |
+| Fundamentals        | https://webgl2fundamentals.org |
 
 ## License
 
