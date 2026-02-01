@@ -5,7 +5,7 @@ import glsl from 'vite-plugin-glsl';
 export default defineConfig(({ mode }) => {
   /** @type {import('vite').UserConfig} */
   return {
-    // config options
+    appType: 'mpa', // disable history fallback
     assetsInclude: ['**/*.gltf', '**/*.glb'],
     plugins: [glsl({ compress: mode === 'production' ? true : false })],
     build: {
