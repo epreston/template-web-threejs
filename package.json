@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@epreston/eslint-config": "^2.4.2",
-    "@epreston/prettier-config": "^2.1.0",
+    "@epreston/prettier-config": "^2.1.1",
     "@epreston/tsconfig": "^1.2.2",
     "@tweakpane/core": "^2.0.5",
     "eslint": "^10.0.2",
