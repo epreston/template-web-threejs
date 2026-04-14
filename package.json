@@ -31,7 +31,7 @@
     "@epreston/tsconfig": "^1.2.2",
     "@tweakpane/core": "^2.0.5",
     "eslint": "^10.2.0",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.2",
     "vite": "^8.0.8",
     "vite-plugin-glsl": "^1.6.0"
   },
