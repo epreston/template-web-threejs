@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@tweakpane/plugin-essentials": "^0.2.1",
-    "three": "0.184.0",
+    "three": "0.185.0",
     "tweakpane": "^4.0.5"
   }
 }
