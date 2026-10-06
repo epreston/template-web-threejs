@@ -14,9 +14,9 @@
     "baseline 2025"
   ],
   "prettier": "@epreston/prettier-config",
-  "packageManager": "npm@11.11.0",
+  "packageManager": "npm@12.2.0",
   "engines": {
-    "node": "^22.22.0 || >=24.13.0"
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   },
   "scripts": {
     "dev": "vite",
